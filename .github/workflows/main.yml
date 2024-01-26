@@ -40,5 +40,5 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: |
-            tgoalm/3.01.repositorio-git-conversao-temperatura:v1
+            tgoalm/3.01.repositorio-git-conversao-temperatura:${{github.run_number}}
             tgoalm/3.01.repositorio-git-conversao-temperatura:latest
