@@ -30,9 +30,9 @@ jobs:
       - name: Construção da imagem Docker
         uses: docker/build-push-action@v5.1.0
         with:
-          context: src
-          file: src/Dockerfile
+          context: ./src
+          file: ./src/Dockerfile
           push: true
-          tags:
+          tags: |
             tgoalm/3.01.repositorio-git-conversao-temperatura:v1
             tgoalm/3.01.repositorio-git-conversao-temperatura:latest
